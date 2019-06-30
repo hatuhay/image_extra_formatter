@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Defines simple link field types.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Link;
+use \Drupal\Component\Utility\Unicode;
+
+/**
+ * Implements hook_theme().
+ */
+function image_extra_formatter_theme() {
+  return array(
+    'image_extra_bootstrap_carousel' => array(
+      'variables' => array('items' => NULL),
+    ),
+    'image_extra_bxslider' => array(
+      'variables' => array('items' => NULL),
+    ),
+  );
+}

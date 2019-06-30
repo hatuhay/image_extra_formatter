@@ -1,0 +1,10 @@
+bxslider:
+  css:
+    component:
+      /libraries/bxslider/jquery.bxslider.css: {}
+  js:
+    /libraries/bxslider/jquery.bxslider.min.js: {}
+    js/bxslider.js: {}
+  dependencies:
+    - core/jquery
+ 

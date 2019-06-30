@@ -1,0 +1,14 @@
+image__bxslider:
+  label: Bxslider
+  type: image_formatter
+  category: Image
+  configuration:
+    path: templates/image_extra_bxslider
+    render element: elements
+image__bootstrap__carousel:
+  label: Bootstrap Carousel
+  type: image_formatter
+  category: Image
+  configuration:
+    path: templates/image_extra_bootstrap_carousel
+    render element: elements

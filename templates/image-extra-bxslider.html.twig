@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Theme override to display a formatted image field.
+ *
+ * Available variables:
+ * - items: A collection of images rendered.
+ *
+ * @see template_preprocess_image_formatter()
+ */
+#}
+{{ attach_library('image_extra_formatter/bxslider') }}
+
+{% if items|length == 1 %}
+  {{ items.image }}
+{% else %}
+
+<ul class="bxslider">
+  {% for item in items %}
+  <li>{{ item.image }}</li>
+  {% endfor %}
+</ul>
+
+<div id="bx-pager">
+  {% for item in items %}
+  <a data-slide-index="{{ loop.index - 1 }}" href=""> {{ item.thumb }} </a>
+  {% endfor %}
+</div>
+{% endif %}

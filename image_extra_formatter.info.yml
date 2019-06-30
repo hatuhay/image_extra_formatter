@@ -1,0 +1,10 @@
+name: Image Extra Formatter
+type: module
+description: 'Provides extra formatter options for image field.'
+core: 8.x
+package: Fields
+# version: VERSION
+dependencies:
+  - field
+  - image
+  
