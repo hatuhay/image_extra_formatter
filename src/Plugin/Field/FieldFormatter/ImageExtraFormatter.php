@@ -139,7 +139,7 @@ class ImageExtraFormatter extends ImageFormatter implements ContainerFactoryPlug
     if ($image_link_setting == 'content') {
       $entity = $items->getEntity();
       if (!$entity->isNew()) {
-        $url = $entity->urlInfo();
+        $url = $entity->toUrl();
       }
     }
     elseif ($image_link_setting == 'file') {
