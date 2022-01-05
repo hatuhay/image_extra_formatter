@@ -13,7 +13,9 @@
 <div class="field field--name-field-image field--type-image field--label-hidden field__item">
 
   {% if items|length == 1 %}
-    {{ items.image }}
+    {% for item in items %}
+      {{ item.image }}
+    {% endfor %}
   {% else %}
   <div id="image-extra-bootstrap-carousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
